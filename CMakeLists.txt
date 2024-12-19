@@ -42,11 +42,15 @@ include(common/pimoroni_bus)
 include(libraries/bitmap_fonts/bitmap_fonts)
 include(libraries/hershey_fonts/hershey_fonts)
 include(libraries/pico_explorer/pico_explorer)
+include(libraries/stellar_unicorn/stellar_unicorn)
+include(libraries/breakout_ioexpander/breakout_ioexpander)
 
 # Don't forget to link the libraries you need!
 target_link_libraries(${NAME}
     pimoroni_i2c
     pico_explorer # <-- List libraries here!
+    stellar_unicorn
+    breakout_ioexpander
 )
 
 # create map/bin/hex file etc.
